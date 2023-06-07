@@ -5,7 +5,6 @@ from .models import Place, Crew
 
 # Create your views here.
 def demo(request):
-    # name="Akhil"
     obj=Place.objects.all()
     obj1=Crew.objects.all()
     return render(request,"index.html",{'result':obj,'result1':obj1})
